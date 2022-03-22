@@ -1,0 +1,201 @@
+/*Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Importação das fontes*/
+@font-face {
+    font-family: Destaque;
+    src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+
+:root{
+    --fonte: 'Destaque';
+    --cor1: #ffcc00;
+    --cor2: #222222;
+    --cor3: #ffffff;
+}
+
+/*Body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Logo do site*/
+#logo{
+    margin: 0px auto;
+    display: flex;
+    justify-items: center;
+}
+
+/*Menu do site*/
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Itens do menu*/
+nav > a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+/*Pequena animação*/
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/*Caixa dos botões*/
+.caixa-btn{
+    background-color: var(--cor1);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--cor2);
+}
+
+/*Botões dos modos*/
+.button{
+    margin: 10px auto;
+    display: flex;
+    justify-items: center;
+    padding: 3px;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+}
+
+/*Corpo da página*/
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*Título*/
+.titulo{
+    text-align: center;
+    font-family: var(--fonte);
+    margin-bottom: 20px;
+}
+
+/*Subtitulo*/
+.subtitulo{
+    font-family: var(--fonte);
+    margin-bottom: 20px;
+}
+
+/*Parágrafos*/
+section > p{
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+/*Letra em itálica*/
+section > i{
+    margin-bottom: 20px;
+}
+
+/*Quadro com imagens*/
+figure > img{
+    width: 100%;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.534);
+}
+
+figure > img:hover{
+    transform: scale(1.2);
+}
+
+/*Descrição da imagem*/
+figure > figcaption{
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+    padding: 5px;
+}
+
+/*Parágrafo do footer*/
+footer > p{
+    text-align: center;
+    margin: 20px;
+    font-family: var(--fonte);
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+/*Contéudo extra*/
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Itens do conteúdo extra*/
+.box > a{
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+    margin: 15px;
+    padding: 7px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*Animações*/
+.box > a:hover{
+    text-decoration: underline;
+}
+
+/*Dispositivos tablets*/
+@media (max-width: 800px){
+    /*Corpo da página*/
+    main{
+        max-width: 800px;
+    }
+
+    /*Título*/
+    .titulo{
+        text-align: center;
+    }
+
+    /*Subtitulo*/
+    .subtitulo{
+        text-align: center;
+    }
+
+    /*Conteúdo extra*/
+    aside > h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    /*Corpo da página*/
+    main{
+        max-width: 600px;
+    }
+
+    /*Título*/
+    .titulo{
+        text-align: center;
+    }
+
+    /*Subtitulo*/
+    .subtitulo{
+        text-align: center;
+    }
+}
